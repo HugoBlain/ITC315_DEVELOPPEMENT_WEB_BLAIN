@@ -1,0 +1,27 @@
+h1 
+{
+	font-size: 18pt;	/* définit la taille de la police de h1*/
+} 
+label 
+{ 
+	width: 100px;				
+	/* définit la largeur à 100 pixel */
+	text-align: right;			
+	/* aligne le texte à droite */
+	display: inline-block;		
+	/* le label et l'input de la même ligne forme maintenant un bloc */
+	vertical-align: baseline;
+	/* aligne le bas du label avec le bas de l'input */
+}
+
+
+@media screen and (max-device-width: 480px){ 
+	/* récupère la largeur de l'écran et si elle est inférieure à 480px alors on 
+	applique le	style suivant */
+  label
+  {
+  	display: block; 
+  	/* permet de supperposer label et input en block */
+  }
+}
+
